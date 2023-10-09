@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+}
+
+.shop {
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.shop h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #232323;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.shop p {
+    margin-top: 5px;
+    color: #8a8a8a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.shop .container {
+    max-width: 100%;
+    display: flex;
+}
+
+.shop .container .left-box {
+    width: 30%;
+}
+
+.shop .container .left-box .category {
+    border: 3px solid #f6f6f6;
+    width: 100%;
+}
+
+.shop .container .left-box .category .header {
+    background: #f6f6f6;
+    padding: 10px 10px;
+    max-width: 100%;
+}
+
+.shop .container .left-box .category .header h3 {
+    font-size: 15px;
+    color: #232323;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.shop .container .left-box .category .box {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.shop .container .left-box .category .box ul {
+    min-width: 100%;
+}
+
+.shop .container .left-box .category .box ul li {
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8a8a8a;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.shop .container .left-box .category .box ul li:hover {
+    color: #232323;
+}
+
+.shop .container .left-box .banner {
+    margin-top: 20px;
+    width: 250px;
+}
+
+.shop .container .left-box .banner .img-box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop .container .right-box {
+    width: 74%;
+}
+
+.shop .container .right-box .banner {
+    max-width: 100%;
+}
+
+.shop .container .right-box .banner .img-box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop .container .right-box .product-box {
+    max-width: 100%;
+    padding: 10px 20px;
+}
+
+.shop .container .right-box .product-box h2 {
+    color: #232323;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.shop .container .right-box .product-box .product-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop .container .right-box .product-box .product-container .box {
+    width: 250px;
+    height: 280px;
+    overflow: hidden;
+    border: 3px solid #f6f6f6;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box {
+    display: flex;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box img {
+    width: 150px;
+    height: 160px;
+    margin-left: 50px;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box .icon {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left: 60px;
+    transition: .5s;
+}
+
+.shop .container .right-box .product-box .product-container .box:hover .img-box .icon {
+    margin-left: -10px;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box .icon li {
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    color: #8a8a8a;
+}
+
+.shop .container .right-box .product-box .product-container .box .img-box .icon li:hover {
+    color: #fff;
+    background: #cd1e76;
+}
+
+.shop .container .right-box .product-box .product-container .box .details {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.shop .container .right-box .product-box .product-container .box .details h3 {
+    text-align: center;
+    color: #232323;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.shop .container .right-box .product-box .product-container .box .details p {
+    font-size: 16px;
+    color: #cd1e76;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.shop .container .right-box .product-box .product-container .box .details button {
+    margin-top: 10px;
+    margin-left: 30%;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background: #fed700;
+    color: #232323;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.shop .container .right-box .product-box .product-container .box .details button:hover {
+    background: #232323;
+    color: #fed700;
+}
+
+.product-details {
+    width: 900px;
+    height: 500px;
+    position: fixed;
+    top: 50px;
+    left: 150px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, .24)0px 3px 8px;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+}
+
+.product-details .close-btn {
+    float: right;
+    border: none;
+    background: none;
+    color: #cd1e76;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.product-details .container {
+    width: 100%;
+    display: flex;
+}
+
+.product-details .container .img-box {
+    padding: 20px 20px;
+    border: 2px solid #f6f6f6;
+    margin-left: 10px;
+
+}
+
+.product-details .container .img-box img {
+    width: 270px;
+    height: 270px;
+}
+
+.product-details .container .info {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.product-details .container .info h4 {
+    color: #8a8a8a;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.product-details .container .info h3 {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #232323;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.product-details .container .info p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8a8a8a;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.product-details .container .info h3 {
+    font-size: 24px;
+    color: #cd1e76;
+    margin-top: 10px;
+}
+
+.product-details .container .info button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: none;
+    background: #cd1e76;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
